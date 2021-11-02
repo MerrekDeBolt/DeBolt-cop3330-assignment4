@@ -72,16 +72,24 @@
                            <Font size="16.0" />
                         </font>
                      </Label>
-                     <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="350.0" prefWidth="300.0">
+                     <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="320.0" prefWidth="300.0">
                         <content>
                            <ListView fx:id="itemsListView" onMouseClicked="#itemListClick" />
                         </content>
                      </ScrollPane>
-                     <HBox alignment="CENTER" layoutX="20.0" layoutY="310.0" spacing="10.0">
+                     <HBox alignment="TOP_CENTER" layoutX="20.0" layoutY="310.0">
                         <children>
-                           <Button onAction="#showAll" prefHeight="50.0" prefWidth="93.0" text="SHOW ALL" textAlignment="CENTER" wrapText="true" />
-                           <Button onAction="#showChecked" prefHeight="50.0" prefWidth="93.0" text="SHOW CHECKED" textAlignment="CENTER" wrapText="true" />
-                           <Button onAction="#showUnchecked" prefHeight="50.0" prefWidth="93.0" text="SHOW UNCHECKED" textAlignment="CENTER" wrapText="true" />
+                           <CheckBox mnemonicParsing="false" text="Sort by Due Date" />
+                        </children>
+                        <padding>
+                           <Insets top="10.0" />
+                        </padding>
+                     </HBox>
+                     <HBox alignment="CENTER" layoutX="20.0" layoutY="410.0" prefHeight="70.0" spacing="10.0">
+                        <children>
+                           <Button onAction="#showAll" prefHeight="70.0" prefWidth="93.0" text="SHOW ALL" textAlignment="CENTER" wrapText="true" />
+                           <Button onAction="#showChecked" prefHeight="70.0" prefWidth="93.0" text="SHOW CHECKED" textAlignment="CENTER" wrapText="true" />
+                           <Button onAction="#showUnchecked" prefHeight="70.0" prefWidth="93.0" text="SHOW UNCHECKED" textAlignment="CENTER" wrapText="true" />
                         </children>
                         <padding>
                            <Insets top="10.0" />

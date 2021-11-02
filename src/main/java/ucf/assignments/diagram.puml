@@ -21,6 +21,7 @@ class HelloController
 {
     @FXML private Label welcomeText;
     @FXML private CheckBox completeCheckBox;
+    @FXML private CheckBox sortCheckBox;
     @FXML private ListView todoListView;
     @FXML private ListView itemsListView;
     @FXML private DatePicker datePicker;

@@ -41,6 +41,7 @@ public class HelloController {
     private void refreshItems()
     {
         Add all items from the selected ToDoList to Item ListView
+        If sortCheck is Checked, sort the ListView
     }
 
     @FXML protected void toDoListClick()
@@ -86,6 +87,11 @@ public class HelloController {
     @FXML protected void onCompleteCheck()
     {
         - Set the current Item's Complete to what's in the CompleteCheck
+        refreshItems();
+    }
+
+    @FXML protected void onSortCheck()
+    {
         refreshItems();
     }
 
